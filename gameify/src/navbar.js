@@ -11,6 +11,7 @@ function Bar() {
       <Nav className="justify-content-end">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="store">Store</Nav.Link>
+        <Nav.Link href="about">About</Nav.Link>
         <Nav.Link href="forum">Discussion Forum</Nav.Link>
       </Nav>
     </Container>
