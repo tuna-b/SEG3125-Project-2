@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Bar from './navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Homepage from './Homepage';
@@ -10,7 +10,7 @@ import View from './View';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className='App'>
         <Bar></Bar>
         <div className="content">
@@ -49,7 +49,7 @@ function App() {
             </Switch>
         </div>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
