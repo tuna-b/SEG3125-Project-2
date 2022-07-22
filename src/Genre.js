@@ -3,12 +3,11 @@ import { useParams } from "react-router-dom";
 import useFetchData from "./fetchData";
 import CompCardGroup from "./cardgroup";
 import OffCanvas from "./OffCanvas";
-import Button from "react-bootstrap/esm/Button";
 
 const Genre = () => {
     
     const { genre } = useParams();
-    const { data } = useFetchData("http://localhost:8000/data");
+    const { data } = useFetchData("data/");
     const [arr, setArr] = useState([]);
 
     const filterData = (arr) => {

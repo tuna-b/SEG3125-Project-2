@@ -14,7 +14,7 @@ const Write = (props) => {
     const history = useHistory();
     const [pending, setPending] = useState(false);
 
-    const {data, success, error} = useFetchData("https://serene-basin-23665.herokuapp.com/data/");
+    const {data, success, error} = useFetchData("/data/");
 
     useEffect(() => {
         setTest(id);
@@ -27,7 +27,7 @@ const Write = (props) => {
         if (test === undefined) return;
         else {
 
-            fetch('http://localhost:8000/data/' + test, {
+            fetch('/data/' + test, {
                 method: 'PUT',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify( 

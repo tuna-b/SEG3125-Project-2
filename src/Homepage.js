@@ -1,7 +1,5 @@
 import Container from "react-bootstrap/esm/Container";
-import Image from 'react-bootstrap/Image'
 import DisplayItems from "./displayItems";
-import compCarousel from "./compCarousel";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Homepage = () => {

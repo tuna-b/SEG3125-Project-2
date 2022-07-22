@@ -6,7 +6,7 @@ import { useState } from "react";
 const View = () => {   
 
     const {id} = useParams();
-    const {data, success, error} = useFetchData("https://serene-basin-23665.herokuapp.com/data/");
+    const {data, success, error} = useFetchData("/data/");
 
     if(success) console.log(data[id-1]["reviews"]);;
     

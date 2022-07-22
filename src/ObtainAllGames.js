@@ -1,4 +1,3 @@
-import { useState } from "react";
 import CompCardGroup from "./cardgroup";
 import useFetchData from "./fetchData";
 

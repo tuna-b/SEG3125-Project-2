@@ -4,7 +4,7 @@ import Button from "react-bootstrap/esm/Button";
 
 const Games = (props) => {
 
-    const {data, success} = useFetchData("https://serene-basin-23665.herokuapp.com/data/");
+    const {data, success} = useFetchData("data/");
     const {id} = useParams();
 
     return ( 

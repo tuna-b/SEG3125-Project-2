@@ -3,7 +3,7 @@ import CompCardGroup from "./cardgroup";
 
 const DisplayItems = (props) => {
         const index = props.index;
-        const url = "http://localhost:8000/data";
+        const url = "/data/";
         const { data, isPending, error } = useFetchData(url);
 
         return (
