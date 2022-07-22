@@ -1,29 +1,23 @@
-import OffCanvas from "./OffCanvas";
-import Button from "react-bootstrap/esm/Button";
+import React, { useState } from 'react';
+import ObtainAllGames from './ObtainAllGames';
+import OffCanvas from './OffCanvas';
+
 
 const Store = () => {
     const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-    return (
-      <>
-        <Button variant="primary" onClick={handleShow}>
-          Launch
-        </Button>
-  
-        <Offcanvas show={show} onHide={handleClose}>
-          <Offcanvas.Header closeButton>
-            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
-          </Offcanvas.Body>
-        </Offcanvas>
-      </>
-    );
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    
+    <div>
+        <OffCanvas></OffCanvas>
+        <ObtainAllGames></ObtainAllGames>
+    </div>
+    
+    
+  );
 }
  
 export default Store;
