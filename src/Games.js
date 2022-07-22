@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import useFetchData from "./fetchData";
 import Button from "react-bootstrap/esm/Button";
 
 const Games = (props) => {
 
-    const {data, success} = useFetchData("/data/");
+    const {data, success} = useFetchData("https://serene-basin-23665.herokuapp.com/data/");
     const {id} = useParams();
 
     return ( 
