@@ -7,6 +7,7 @@ import Genre from './Genre';
 import Games from './Games';
 import Write from './Write';
 import View from './View';
+import About from './About';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
               </Route>
 
               <Route exact path='/about'>
-
+                <About></About>
               </Route>
 
               <Route exact path='/forum/:id'>
