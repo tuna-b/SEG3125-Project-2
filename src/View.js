@@ -7,7 +7,7 @@ const View = () => {
 
     const history = useHistory();
     const {id} = useParams();
-    const {data, success, error} = useFetchData("http://localhost:8000/data/");
+    const {data, success, error} = useFetchData("/data/");
     const [count, setCount] = useState(0);
 
 

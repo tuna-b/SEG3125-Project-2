@@ -4,7 +4,7 @@ import useFetchData from "./fetchData";
 
 const ObtainAllGames = (props) => {
 
-    const {data} = useFetchData("http://localhost:8000/data");
+    const {data} = useFetchData("/data/");
     
     return (  
         <div>

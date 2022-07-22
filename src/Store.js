@@ -4,10 +4,6 @@ import OffCanvas from './OffCanvas';
 
 
 const Store = () => {
-    const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     

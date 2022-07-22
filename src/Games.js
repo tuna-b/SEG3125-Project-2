@@ -5,7 +5,7 @@ import Button from "react-bootstrap/esm/Button";
 
 const Games = (props) => {
 
-    const {data, success} = useFetchData("http://localhost:8000/data/");
+    const {data, success} = useFetchData("/data/");
     const {id} = useParams();
 
     return ( 
