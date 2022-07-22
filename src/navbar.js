@@ -26,10 +26,10 @@ const Bar = () => {
     <Container>
       <Navbar.Brand href="/">Gameify</Navbar.Brand>
       <Nav className="justify-content-end">
-        <Nav.Link to="/">Home</Nav.Link>
-        <Nav.Link to="/store">Store</Nav.Link>
-        <Nav.Link to="/about">About</Nav.Link>
-        <Nav.Link to="/forum">Discussion Forum</Nav.Link>
+        <Link className='nav-link' to={"/"}>Home</Link>
+        <Link className='nav-link' to="/store">Store</Link>
+        <Link className='nav-link' to="/about">About</Link>
+        <Link className='nav-link' to="/forum">Discussion Forum</Link>
       </Nav>
       <Form className="d-flex">
             <Form.Control
