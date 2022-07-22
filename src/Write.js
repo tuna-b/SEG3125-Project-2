@@ -14,7 +14,7 @@ const Write = (props) => {
     const history = useHistory();
     const [pending, setPending] = useState(false);
 
-    const {data, success, error} = useFetchData("http://localhost:8000/data");
+    const {data, success, error} = useFetchData("https://serene-basin-23665.herokuapp.com/data/");
 
     useEffect(() => {
         setTest(id);
